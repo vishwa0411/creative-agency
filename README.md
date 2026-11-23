@@ -13,10 +13,12 @@ Creative Studio is a digital agency homepage designed to present creative servic
 - Hero section with call-to-action buttons
 - Services section with four service cards
 - Portfolio section showcasing creative projects
-- Contact form with submission confirmation message
+- Contact form with client-side validation and submission confirmation
+- Dark and light theme toggle
 - Responsive design for desktop, tablet, and mobile
-- Hover effects and interactive elements
+- Hover effects, smooth scrolling, and interactive elements
 - SEO metadata
+- Optimized images using Next.js Image component
 
 ## Services
 
@@ -32,6 +34,7 @@ Creative Studio is a digital agency homepage designed to present creative servic
 - JavaScript
 - HTML
 - CSS
+- Next.js App Router
 
 ## Project Structure
 
@@ -46,7 +49,7 @@ creative-agency/
 ├── components/
 │   ├── Navbar.jsx
 │   ├── Hero.jsx
-│   ├── Service.jsx
+│   ├── Services.jsx
 │   ├── Portfolio.jsx
 │   ├── Contact.jsx
 │   └── Footer.jsx
@@ -65,7 +68,7 @@ Follow these steps to run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/vishwa0411/creative-agency.git
 ```
 
 ### 2. Navigate to the Project Folder
@@ -88,13 +91,19 @@ npm run dev
 
 Open your browser and visit:
 
-```text
 http://localhost:3000
+
+## Production Build
+
+To create an optimized production build:
+
+```bash
+npm run build
 ```
 
 ## Contact Form
 
-The contact form includes client-side validation and a submission confirmation message.
+The contact form includes client-side validation and displays a submission confirmation message. It is currently a frontend demonstration and is not connected to a backend or email service.
 
 ## Author
 
